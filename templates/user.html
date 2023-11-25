@@ -52,25 +52,24 @@
         class="hero-body"
         style="padding-bottom: 1rem; margin: auto; min-width: 400px"
       >
-        <article class="media">
-          <figure class="media-left" style="align-self: center">
+        <article class="media is-centered has-text-centered">
+          <figure class="media-left" style="align-self: center; padding-left: 20vh;">
             <a class="image is-96x96" href="#">
               <img
                 class="is-rounded"
                 src="{{ url_for('static', filename=user_info.profile_pic_real) }}"
               />
             </a>
-          </figure>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>{{ user_info.profile_name }}</strong>
-                <small>@{{ user_info.username }}</small>
-                <br />
-                {{ user_info.profile_info }}
-              </p>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>{{ user_info.profile_name }}</strong> <small>@{{ user_info.username }}</small>
+                  <br />
+                  {{ user_info.profile_info }}
+                </p>
+              </div>
             </div>
-          </div>
+          </figure>            
         </article>
       </div>
     </section>
@@ -154,7 +153,7 @@
                     class="textarea"
                     placeholder="Introduce yourself"
                   >
-{{ user_info.profile_info }}</textarea
+                  {{ user_info.profile_info }}</textarea
                   >
                 </p>
               </div>
