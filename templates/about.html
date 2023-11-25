@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="{{url_for('static', filename='logo.png')}}" type="image/x-icon"/>
+  <meta property="og:title" content="Sweeter - the sweeter site"/>
+  <meta property="og:description" content="Are you looking for me?"/>
+  <meta property="og:image" content="{url_for{'static', filename='ogimage.jpg'}}"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWETER | ABOUT PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<style>
+   body {
+            font-style: italic; 
+        }
+        #banner {
+            background-image: url('../static/about.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: saturate(80%);
+            min-height: 100px;
+        }
+        .box {
+            padding-top: 20vh;
+            padding-bottom: 20vh;
+            padding-left: 30vw;
+            padding-right: 30vw;
+            background-color: rgba(26, 22, 22, 0.5);  
+            border-radius: 5%;
+        }
+        .box p,
+        .box a { 
+            opacity: 1;
+        } 
+        .box a {
+            color: #fff;
+        }
+        .box a:hover {
+            color: #1e9ec5;
+        }
+
+</style>
+</head>
+<body>
+  <section id="banner" class="hero is-large columns is-vcentered is-centered">
+    <div class="hero-body column has-text-centered">
+    <div class="box"> 
+      <p class="title has-text-primary">The About Page</p>
+      <p class="subtitle has-text-light">Welcome to the about page</p> 
+      <a href="/" class="button is-medium is-primary is-outlined">Homepage</a> 
+    </div>
+    </div>         
+  </section> 
+</body>
+</html>
